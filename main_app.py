@@ -370,7 +370,6 @@ st.markdown(
 left, right = st.columns([1.08, 0.92], gap="large")
 
 with left:
-    st.markdown('<div class="glass">', unsafe_allow_html=True)
     st.markdown("## 1. Test an input")
     st.markdown(
         '<p class="muted">Click a card. The black box will answer only <b>YES</b> or <b>NO</b>. Your goal is to find one rule that explains every result.</p>',
@@ -421,7 +420,6 @@ st.write("")
 bottom_left, bottom_right = st.columns([1, 1], gap="large")
 
 with bottom_left:
-    st.markdown('<div class="glass">', unsafe_allow_html=True)
     st.markdown("## 2. Evidence Board")
 
     if not st.session_state.history:
@@ -449,8 +447,7 @@ with bottom_left:
 
     st.markdown("</div>", unsafe_allow_html=True)
 
-with bottom_right:
-    st.markdown('<div class="glass">', unsafe_allow_html=True)
+with bottom_right:  
     st.markdown("## 3. Reflection")
 
     st.markdown(
